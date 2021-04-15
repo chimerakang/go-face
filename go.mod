@@ -1,3 +1,3 @@
-module github.com/Kagami/go-face
+module github.com/chimerakang/go-face
 
-go 1.14
+go 1.15
