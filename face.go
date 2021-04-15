@@ -1,7 +1,7 @@
 package face
 
 // #cgo CXXFLAGS: -std=c++1z -Wall -O3 -DNDEBUG -march=native
-// #cgo LDFLAGS: -ldlib -lblas -llapack -ljpeg -lcuda -lcudnn -lcudart -lcurand -lcusolver -lopencv_core -lopencv_dnn 
+// #cgo LDFLAGS: -ldlib -lblas -llapack -ljpeg -L/usr/local/cuda -lcuda -lcudnn -lcudart -lcurand -lcusolver -lopencv_core -lopencv_dnn 
 // #include <stdlib.h>
 // #include <stdint.h>
 // #include "facerec.h"
