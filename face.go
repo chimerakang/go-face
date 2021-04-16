@@ -1,7 +1,15 @@
 package face
 
 // #cgo CXXFLAGS: -std=c++1z -Wall -O3 -DNDEBUG -march=native
-// #cgo LDFLAGS: -ldlib -lblas -llapack -ljpeg -L/usr/local/cuda/lib64 -lcuda -lcudnn -lcudart -lcurand -lcusolver -lopencv_core -lopencv_dnn 
+////default location:
+// #cgo LDFLAGS:-L/usr/local/cuda/lib64 -L/usr/local/cuda/lib
+// #cgo CFLAGS: -I/usr/local/cuda/include/
+//
+// #cgo LDFLAGS:-L/usr/local/cuda-10.2/lib64 -L/usr/local/cuda-10.2/lib
+// #cgo CFLAGS: -I/usr/local/cuda-10.2/include/
+// #cgo LDFLAGS:-L/usr/local/cuda/lib64 -L/usr/lib/aarch64-linux-gnu
+//
+// #cgo LDFLAGS: -ldlib -lblas -llapack -ljpeg  -lcuda -lcudnn -lcudart -lcurand -lcusolver -lopencv_core -lopencv_dnn 
 // #include <stdlib.h>
 // #include <stdint.h>
 // #include "facerec.h"
